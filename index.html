@@ -9,6 +9,7 @@
 
         </title>
 
+        <link rel="stylesheet" href="resources/css/nav.css">
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="icon" type="image/x-icon" href="resources/images/icons/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,400;1,500;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,6 +18,14 @@
     </head>
 
     <body>
+
+        <div id="background">
+
+            <div id="bg"></div>
+
+            <div id="overlay"></div>
+
+        </div>
 
         <header id="header" tabindex="0">
 
@@ -36,10 +45,10 @@
 
             <div id="menuTop">
 
-                <div id="menuToggle" tabindex="0">
+                <div id="menuToggle">
 
-                    <img id="navOpenMenu" class="menuToggle" src="resources/images/icons/menu.svg" alt="Open Menu">
-                    <img id="navCloseMenu" class="menuToggle" src="resources/images/icons/close.svg" alt="Open Menu">
+                    <img id="navOpenMenu" class="menuToggle" src="resources/images/icons/menu.svg" alt="Open Menu" tabindex="0">
+                    <img id="navCloseMenu" class="menuToggle" src="resources/images/icons/close.svg" alt="Open Menu" tabindex="0">
     
                 </div>
     
@@ -84,7 +93,11 @@
     
                 </ul>
 
+                <div id="navLine"></div>
+
             </div>
+
+            
 
             <ul id="navSocialList">
 
@@ -131,21 +144,17 @@
 
         <main>
 
-            <div id="bg"></div>
-
-            <div id="overlay"></div>
-
             
 
         </main>
 
-        <footer>
+        <footer id="#footer">
 
-
+            <p>I'm a Footer</p>
 
         </footer>
 
-        <script src="resources/script/script.js"></script>
+        <script src="resources/script/nav.js"></script>
 
     </body>
 </html>

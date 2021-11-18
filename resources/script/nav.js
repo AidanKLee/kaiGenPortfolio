@@ -29,6 +29,12 @@ const spotify = document.getElementById('spotify');
 const youtube = document.getElementById('youtube');
 const social = [apple, facebook, instagram, linkedIn, soundcloud, spotify, youtube];
 
+const header = document.querySelector('header');
+const main = document.querySelector('main');
+const footer = document.querySelector('footer');
+const background = document.getElementById('background');
+const content = [header, main, footer]
+
 
 
 
@@ -43,6 +49,7 @@ const menuOpen = () => {
     navText.forEach(element => {
 
         element.classList.remove('shrink');
+        element.classList.add('grow');
 
     });
 
@@ -50,7 +57,14 @@ const menuOpen = () => {
 
         element.style.justifyContent = 'flex-start';
 
-    })
+    });
+
+    content.forEach(element => {
+
+        element.classList.remove('focus');
+        element.classList.add('blur');
+
+    });
 
     menuBtn.style.width = "fit-content"
     menuBtn.style.margin = '0 0 8px 0';
@@ -66,24 +80,39 @@ const menuOpen = () => {
     
         });
         
-    }, 95);
+    }, 125);
 
     setTimeout(function() {
 
         navText.forEach(element => {
            
             element.style.display = 'inline';
-            element.classList.add('grow');
     
         });
 
-        menu.style.width = '320px';
+        content.forEach(element => {
+
+            element.style.filter = 'blur(5px)'
+    
+        });
+
+        menu.style.maxWidth = '320px';
         
     }, 495);
 
 };
 
 opnMenu.addEventListener('click', menuOpen);
+
+opnMenu.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        menuOpen();
+
+    };
+
+});
 
 
 
@@ -104,6 +133,12 @@ const menuClose = () => {
 
     });
 
+    content.forEach(element => {
+
+        element.classList.remove('blur');
+        element.classList.add('focus');
+
+    });
 
     opnMenu.style.display = '';
     clsMenu.style.display = '';
@@ -133,16 +168,32 @@ const menuClose = () => {
 
         menuBtn.style.width = ""
         menuBtn.style.margin = '';
-        menu.style.width = '';
+        menu.style.maxWidth = '';
 
         navListItems.forEach(element => {
 
             element.style.justifyContent = '';
     
-        })
+        });
+        
+        content.forEach(element => {
+
+            element.style.filter = ''
+    
+        });
         
     }, 495);
 
 };
 
 clsMenu.addEventListener('click', menuClose);
+
+clsMenu.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        menuClose();
+
+    };
+
+});

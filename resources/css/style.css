@@ -19,6 +19,15 @@ html {
 
 }
 
+a {
+
+    font-size: 1rem;
+    font-weight: normal;
+    color: #f1f1f1;
+    text-decoration: none;
+
+}
+
 h1, h2, h3, h4, h5, h6 {
 
     line-height: 1.2;

@@ -129,6 +129,12 @@ section {
 /* Main */
 /* Home Section */
 
+#home {
+
+    display: none;
+
+}
+
 #homeWelcome {
 
     margin: 0 16px;
@@ -181,13 +187,113 @@ section {
 }
 
 
-@media only screen and (max-width: 650px) {
+/* About */
+
+#aboutContent {
+
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32px;
+    margin-bottom: 16px;
+
+}
+
+#myPic {
+
+    width: 50%;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(31, 31, 31, .8);
+
+}
+
+#aboutContent figcaption {
+
+    min-width: 50%;
+    display: flex;
+    padding-left: 32px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#aboutLang {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+#aboutLang img {
+
+    flex-shrink: 2;
+    width: 80px;
+    padding: 8px;
+    margin: 16px 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    #aboutLang img {
+
+        width: 56px;
+
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
 
     html {
 
         font-size: 12px;
 
     }
+
+    #myPic {
+
+        margin: 16px 0;
+
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+
+    #myPic {
+
+        display: none;
+
+    }
+
+    #aboutContent figcaption {
+
+        padding-left: 0;
+
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+
+    #aboutContent {
+
+        flex-wrap: wrap;
+
+    }    
 
     .larger {
 
@@ -197,7 +303,7 @@ section {
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
 
     html {
 
@@ -205,16 +311,32 @@ section {
 
     }
 
-    .larger {
-
-        font-size: 6rem;
-
-    }
-
     #homeSocialList img {
 
         margin: 4px 16px 4px 16px;
     
+    }
+
+    #aboutContent {
+
+        padding: 0 16px;
+
+    }
+
+    #aboutLang img {
+
+        margin: 8px 8px;
+
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .larger {
+
+        font-size: 6rem;
+
     }
 
 }
@@ -233,7 +355,7 @@ section {
         font-size: 3.85rem;
 
     }
-
+    
 }
 
 @media only screen and (max-height: 375px) {
@@ -241,6 +363,16 @@ section {
     #homeSocials {
 
         display: none;
+
+    }
+
+}
+
+@media only screen and (max-height: 725px) {
+
+    body {
+
+        overflow-y: scroll;
 
     }
 

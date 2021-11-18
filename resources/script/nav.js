@@ -31,6 +31,8 @@ const spotify = document.getElementById('spotify');
 const youtube = document.getElementById('youtube');
 const social = [apple, facebook, instagram, linkedIn, soundcloud, spotify, youtube];
 
+const navResume = document.getElementById('navResume');
+
 const header = document.querySelector('header');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
@@ -75,7 +77,6 @@ const menuOpen = () => {
     opnMenu.style.display = 'none';
     clsMenu.style.display = 'block';
 
-
     setTimeout(function() {
 
         social.forEach(element => {
@@ -101,6 +102,10 @@ const menuOpen = () => {
         });
 
         menu.style.maxWidth = '320px';
+
+        navResume.style.display = 'flex';
+        navResume.classList.remove('slideOutRight');
+        navResume.classList.add('slideInRight');
         
     }, 495);
 
@@ -148,6 +153,9 @@ const menuClose = () => {
 
     opnMenu.style.display = '';
     clsMenu.style.display = '';
+    
+    navResume.classList.remove('slideInRight');
+    navResume.classList.add('slideOutRight');
 
     setTimeout(function() {
 
@@ -156,6 +164,8 @@ const menuClose = () => {
             element.style.display = '';
     
         });
+
+        navResume.style.display = '';
         
     }, 195);
 

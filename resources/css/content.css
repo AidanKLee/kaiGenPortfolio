@@ -131,8 +131,8 @@ section {
 /* Home Section */
 
 #home {
-
-    /* display: none; */
+/* 
+    display: none; */
 
 }
 
@@ -276,14 +276,16 @@ section {
 
 }
 
+
+
 @media only screen and (max-width: 700px) {
 
 
-    /* #myPic {
+    #myPic {
 
         display: none;
 
-    } */
+    }
 
     #aboutContent figcaption {
 
@@ -375,11 +377,44 @@ section {
 
 }
 
+@media only screen and (max-height: 710px) {
+
+
+    #aboutLang img {
+
+        width: 48px;
+
+    }
+
+}
+
 @media only screen and (max-height: 375px) {
 
     #homeSocials {
 
         display: none;
+
+    }
+
+    .larger {
+
+        font-size: 5.5rem;
+
+    }
+
+}
+
+@media only screen and (max-height: 375px) and (max-width: 375px) {
+
+    .larger {
+
+        font-size: 5.5rem;
+
+    }
+
+    .larger {
+
+        font-size: 3.85rem;
 
     }
 

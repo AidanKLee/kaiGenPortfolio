@@ -20,6 +20,8 @@ const listMusic = document.getElementById('listMusic');
 const listContact = document.getElementById('listContact');
 const navListItems = [listHome, listAbout, listServices, listPortfolio, listMusic, listContact];
 
+const navSocialList = document.getElementById('navSocialList');
+
 const apple = document.getElementById('apple');
 const facebook = document.getElementById('facebook');
 const instagram = document.getElementById('instagram');
@@ -33,7 +35,7 @@ const header = document.querySelector('header');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
 const background = document.getElementById('background');
-const content = [header, main, footer]
+const content = [header, main, footer, background]
 
 
 
@@ -52,6 +54,8 @@ const menuOpen = () => {
         element.classList.add('grow');
 
     });
+
+    navSocialList.style.alignContent = 'flex-start';
 
     navListItems.forEach(element => {
 
@@ -133,6 +137,8 @@ const menuClose = () => {
 
     });
 
+    
+
     content.forEach(element => {
 
         element.classList.remove('blur');
@@ -181,6 +187,8 @@ const menuClose = () => {
             element.style.filter = ''
     
         });
+
+        navSocialList.style.alignContent = '';
         
     }, 495);
 

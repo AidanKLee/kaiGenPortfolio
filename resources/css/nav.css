@@ -112,9 +112,11 @@ nav img:hover {
 #navSocialList {
 
     display: flex;
+    flex: 1 0 auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     margin-bottom: 16px;
     
 }
@@ -122,6 +124,7 @@ nav img:hover {
 .navSocialListItem {
 
     display: flex;
+    flex: 0 0 auto;
     justify-content: center;
     align-items: center;
     width: 48px;
@@ -144,6 +147,7 @@ nav img:hover {
 
     padding: 16px;
     width: 48px;
+    display: block;
 
 }
 
@@ -346,6 +350,12 @@ nav img:hover {
     
     }
 
+    #navSocialList {
+
+        align-content: space-around;
+    
+    }
+
     .navSocialListItem {
 
         width: 40px;
@@ -390,6 +400,12 @@ nav img:hover {
 
 @media only screen and (max-height: 700px) {
 
+    #navSocialList {
+
+        align-content: flex-start;
+        
+    }
+
     .navSocialListItem {
 
         width: 32px;
@@ -417,7 +433,7 @@ nav img:hover {
 
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 420px) {
 
     .navSocialListItem {
 

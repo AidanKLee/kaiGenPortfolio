@@ -3,14 +3,15 @@
 
     <head>
 
-        <title>
+        <title aria-label="Kaygen | Full Stack Developer">
 
             Kai-Gen | Full Stack Developer
 
         </title>
 
-        <link rel="stylesheet" href="resources/css/nav.css">
         <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/nav.css">
+        <link rel="stylesheet" href="resources/css/content.css">
         <link rel="icon" type="image/x-icon" href="resources/images/icons/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,400;1,500;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,9 +32,9 @@
 
             <div id="headerLogoWrapper">
 
-                <img id="headerLogo" src="resources/images/icons/logo.png" alt="Kai-Gen Logo" aria-label="kaygen logo">
+                <img id="headerLogo" src="resources/images/icons/logo.png" alt="">
 
-                <h1 class="h5Size">
+                <h1 class="h5Size" aria-label="kaygen logo">
                     KAI-GEN
                 </h1>
 
@@ -48,45 +49,45 @@
                 <div id="menuToggle">
 
                     <img id="navOpenMenu" class="menuToggle" src="resources/images/icons/menu.svg" alt="Open Menu" tabindex="0">
-                    <img id="navCloseMenu" class="menuToggle" src="resources/images/icons/close.svg" alt="Open Menu" tabindex="0">
+                    <img id="navCloseMenu" class="menuToggle" src="resources/images/icons/close.svg" alt="Close Menu" tabindex="0">
     
                 </div>
     
                 <ul id="navList">
     
-                    <li id="listHome" class="navListItem">
-                        <img src="resources/images/icons/home.svg" alt="Home" tabindex="0">
-                        <p id="homeText" class="navText">
+                    <li id="listHome" class="navListItem" tabindex="0">
+                        <img src="resources/images/icons/home.svg" alt="Home">
+                        <p id="homeText" class="navText" aria-hidden="true">
                             Home
                         </p>
                     </li>
-                    <li id="listAbout" class="navListItem">
-                        <img src="resources/images/icons/about.svg" alt="About" tabindex="0">
-                        <p id="aboutText" class="navText">
+                    <li id="listAbout" class="navListItem" tabindex="0">
+                        <img src="resources/images/icons/about.svg" alt="About">
+                        <p id="aboutText" class="navText" aria-hidden="true">
                             About
                         </p>
                     </li>
-                    <li id="listServices" class="navListItem">
-                        <img src="resources/images/icons/services.svg" alt="Services" tabindex="0">
-                        <p id="servicesText" class="navText">
+                    <li id="listServices" class="navListItem" tabindex="0">
+                        <img src="resources/images/icons/services.svg" alt="Services">
+                        <p id="servicesText" class="navText" aria-hidden="true">
                             Services
                         </p>
                     </li>
-                    <li id="listPortfolio" class="navListItem">
-                        <img src="resources/images/icons/work.svg" alt="Porfolio" tabindex="0">
-                        <p id="portfolioText" class="navText">
+                    <li id="listPortfolio" class="navListItem" tabindex="0">
+                        <img src="resources/images/icons/work.svg" alt="Portfolio">
+                        <p id="portfolioText" class="navText" aria-hidden="true">
                             Portfolio
                         </p>
                     </li>
-                    <li id="listMusic" class="navListItem">
-                        <img src="resources/images/icons/music.svg" alt="Music" tabindex="0">
-                        <p id="musicText" class="navText">
+                    <li id="listMusic" class="navListItem" tabindex="0">
+                        <img src="resources/images/icons/music.svg" alt="Music">
+                        <p id="musicText" class="navText" aria-hidden="true">
                             Music
                         </p>
                     </li>
-                    <li id="listContact" class="navListItem">
-                        <img src="resources/images/icons/contact.svg" alt="contact" tabindex="0">
-                        <p id="contactText" class="navText">
+                    <li id="listContact" class="navListItem" tabindex="0">
+                        <img src="resources/images/icons/contact.svg" alt="Contact">
+                        <p id="contactText" class="navText" aria-hidden="true">
                             Contact
                         </p>
                     </li>
@@ -95,48 +96,46 @@
 
                 <div id="navLine"></div>
 
-            </div>
-
-            
+            </div>   
 
             <ul id="navSocialList">
 
-                <a href="">
-                    <li id="apple" class="navSocialListItem">
-                        <img src="resources/images/icons/social/apple.svg" alt="Apple Music">
-                    </li>
-                </a>
-                <a href="">
-                    <li id="facebook" class="navSocialListItem">
-                        <img src="resources/images/icons/social/facebook.svg" alt="Facebook">
-                    </li>
-                </a>
-                <a href="">
-                    <li id="instagram" class="navSocialListItem">
-                        <img src="resources/images/icons/social/instagram.svg" alt="Instagram">
-                    </li>
-                </a>
-                <a href="">
-                    <li id="linkedIn" class="navSocialListItem">
-                        <img src="resources/images/icons/social/linkedin.svg" alt="LinkedIn">
-                    </li>
-                </a>
-                <a href="">
-                    <li id="soundcloud" class="navSocialListItem">
-                        <img src="resources/images/icons/social/soundcloud.svg" alt="Soundcloud">
-                    </li>
-                </a>
-                <a href="">
-                    <li id="spotify" class="navSocialListItem">
-                        <img src="resources/images/icons/social/spotify.svg" alt="Spotify">
-                    </li>
-                </a>
-                <a href="">
-                    <li id="youtube" class="navSocialListItem">
-                        <img src="resources/images/icons/social/youtubeplay.svg" alt="YouTube">
-                    </li>
-                </a>
                 
+                <li id="apple" class="navSocialListItem">
+                    <a href="">
+                        <img src="resources/images/icons/social/apple.svg" alt="Apple Music">
+                    </a>
+                </li>
+                <li id="facebook" class="navSocialListItem">
+                    <a href="">
+                        <img src="resources/images/icons/social/facebook.svg" alt="Facebook">
+                    </a> 
+                </li>
+                    <li id="instagram" class="navSocialListItem">
+                        <a href="">
+                            <img src="resources/images/icons/social/instagram.svg" alt="Instagram">
+                        </a>    
+                    </li>
+                    <li id="linkedIn" class="navSocialListItem">
+                        <a href="">
+                            <img src="resources/images/icons/social/linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li id="soundcloud" class="navSocialListItem">
+                        <a href="">
+                            <img src="resources/images/icons/social/soundcloud.svg" alt="Soundcloud">
+                        </a>
+                    </li>
+                    <li id="spotify" class="navSocialListItem">
+                        <a href="">
+                            <img src="resources/images/icons/social/spotify.svg" alt="Spotify">
+                        </a>
+                    </li>
+                    <li id="youtube" class="navSocialListItem">
+                        <a href="">
+                            <img src="resources/images/icons/social/youtubeplay.svg" alt="YouTube">
+                        </a>
+                    </li>
 
             </ul>
 
@@ -144,13 +143,90 @@
 
         <main>
 
-            
+            <section id="home">
+
+                <div id="homeWelcome" tabindex="0">
+
+                    <h2 class="light pSize" aria-label="welcome to">
+                        Welcome to...
+                    </h2>
+                    <h3 class="larger" aria-label="kaygen.">
+                        KAI-GEN
+                    </h3>
+                    <h4 class="light pSize">
+                        Hi I'm Aidan Lee, a Full Stack Developer and Composer.
+                    </h4>
+
+                </div>
+
+                <div id="homeButtons">
+
+                    <a id="about" class="button italic bold smallpSize" tabindex="0">
+
+                        ABOUT
+
+                    </a>
+
+                    <a id="resume" class="button italic bold smallpSize blue" tabindex="0" aria-label="Resumay">
+
+                        RESUME
+
+                    </a>
+
+                </div>
+
+                <div id="homeSocials">
+
+                    <ul id="homeSocialList">
+
+                        <li class="homeSocialListItem">
+                            <a href="">
+                                <img src="resources/images/icons/social/apple.svg" alt="Apple Music">
+                            </a>
+                        </li>
+                        <li id="homeFacebook" class="homeSocialListItem">
+                            <a href="">
+                                <img src="resources/images/icons/social/facebook.svg" alt="Facebook">
+                            </a> 
+                        </li>
+                        <li id="homeInstagram" class="homeSocialListItem">
+                            <a href="">
+                                <img src="resources/images/icons/social/instagram.svg" alt="Instagram">
+                            </a>    
+                        </li>
+                        <li id="homeLinkedIn" class="homeSocialListItem">
+                            <a href="">
+                                <img src="resources/images/icons/social/linkedin.svg" alt="LinkedIn">
+                            </a>
+                        </li>
+                        <li id="homeSoundcloud" class="homeSocialListItem">
+                            <a href="">
+                                <img src="resources/images/icons/social/soundcloud.svg" alt="Soundcloud">
+                            </a>
+                        </li>
+                        <li id="homeSpotify" class="homeSocialListItem">
+                            <a href="">
+                                <img src="resources/images/icons/social/spotify.svg" alt="Spotify">
+                            </a>
+                        </li>
+                        <li id="homeYoutube" class="homeSocialListItem">
+                            <a href="">
+                                <img src="resources/images/icons/social/youtubeplay.svg" alt="YouTube">
+                            </a>
+                        </li>
+        
+                    </ul>
+
+                </div>
+
+
+            </section>            
 
         </main>
 
         <footer id="#footer">
 
-            <p>I'm a Footer</p>
+            <p class="smallPrint">&copy Copyright 2021 - Aidan Lee</p>
 
         </footer>
 

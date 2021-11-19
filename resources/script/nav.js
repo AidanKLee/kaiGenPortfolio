@@ -37,12 +37,21 @@ const header = document.querySelector('header');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
 const background = document.getElementById('background');
-const content = [header, main, footer, background]
+const content = [header, main, footer, background];
+
+const home = document.getElementById('home');
+const about = document. getElementById('about');
+const services = document.getElementById('services');
+const portfolio = document.getElementById('portfolio');
+const music = document.getElementById('music');
+const contact = document.getElementById('contact');
+const contentSections = [home, about, services, portfolio, music, contact];
+
+const aboutButton = document.getElementById('aboutLink');
 
 
 
-
-
+//Open Menu Function
 const menuOpen = () => {
 
     menu.classList.remove('menuShrink');
@@ -109,8 +118,12 @@ const menuOpen = () => {
         
     }, 495);
 
+    menu.classList.remove('closed');
+
 };
 
+
+//Event Listeners To Open The Menu
 opnMenu.addEventListener('click', menuOpen);
 
 opnMenu.addEventListener('keydown', function(e) {
@@ -127,10 +140,9 @@ opnMenu.addEventListener('keydown', function(e) {
 
 
 
+//Close Menu Function
 const menuClose = () => {
 
-    
-    
     navResume.classList.remove('slideInRight');
     navResume.classList.add('slideOutRight');
 
@@ -177,7 +189,7 @@ const menuClose = () => {
     
         });
         
-    }, 255);
+    }, 455);
 
 
     setTimeout(function() {
@@ -200,11 +212,27 @@ const menuClose = () => {
 
         navSocialList.style.alignContent = '';
         
-    }, 495);
+    }, 695);
+
+    menu.classList.add('closed');
 
 };
 
+const clickPageClose = () => {
+
+    if (menu.style.maxWidth !== "") {
+
+        menuClose();
+
+    };
+
+};
+
+//Event Listeners To Close The Menu
 clsMenu.addEventListener('click', menuClose);
+header.addEventListener('click', clickPageClose);
+main.addEventListener('click', clickPageClose);
+footer.addEventListener('click', clickPageClose);
 
 clsMenu.addEventListener('keydown', function(e) {
 
@@ -215,3 +243,275 @@ clsMenu.addEventListener('keydown', function(e) {
     };
 
 });
+
+
+
+
+
+// Function To Fade Out Any Section
+const fadeOutSections = () => {
+
+    contentSections.forEach(section => {
+
+        section.classList.remove('fadeIn');
+        section.classList.remove('fadeOut');
+
+    });
+
+    contentSections.forEach(section => {
+
+        console.log(section.classList)
+
+        section.classList.add('fadeOut');
+
+        setTimeout(function() {
+
+            section.style.display = "none";
+
+        }, 495);  
+
+    });
+
+};
+
+
+//Function To Close The Menu Then Fade The Sections
+const closeMenuFadeSections = () => {
+
+    if (menu.style.maxWidth === '320px') {
+
+        menuClose();
+
+        setTimeout(function() {
+
+            fadeOutSections();
+
+        },700);
+
+    } else {
+
+        fadeOutSections();
+
+    };
+
+};
+
+
+
+
+
+//Function To Open Home Section
+const openHome = () => {
+
+    if (home.style.display !== 'flex' && menu.style.maxWidth === '320px') {
+
+        closeMenuFadeSections();
+
+    setTimeout(function() {
+                    
+        home.style.display = 'flex';
+        home.classList.add('fadeIn');
+
+    }, 1250);
+
+    } else if (home.style.display !== 'flex') {
+
+        closeMenuFadeSections();
+
+        setTimeout(function() {
+                        
+            home.style.display = 'flex';
+            home.classList.add('fadeIn');
+
+        }, 550);
+
+    };
+
+};
+
+
+//Event Listeners For Home Section
+listHome.addEventListener('click', openHome);
+
+
+
+
+
+//Function To Open About Section
+const openAbout = () => {
+
+    if (about.style.display !== 'flex' && menu.style.maxWidth === '320px') {
+
+        closeMenuFadeSections();
+
+        setTimeout(function() {
+                        
+            about.style.display = 'flex';
+            about.classList.add('fadeIn');
+
+        }, 1250);
+
+    } else if (about.style.display !== 'flex') {
+
+        closeMenuFadeSections();
+
+        setTimeout(function() {
+                        
+            about.style.display = 'flex';
+            about.classList.add('fadeIn');
+
+        }, 550);
+
+    };
+
+};
+
+
+//Event Listeners For About Section
+listAbout.addEventListener('click', openAbout);
+aboutButton.addEventListener('click', openAbout);
+
+
+
+
+//Function To Open Services Section
+const openServices = () => {
+
+    if (services.style.display !== 'flex' && menu.style.maxWidth === '320px') {
+
+        closeMenuFadeSections();
+
+    setTimeout(function() {
+                    
+        services.style.display = 'flex';
+        services.classList.add('fadeIn');
+
+    }, 1250);
+
+    } else if (services.style.display !== 'flex') {
+
+        closeMenuFadeSections();
+
+        setTimeout(function() {
+                        
+            services.style.display = 'flex';
+            services.classList.add('fadeIn');
+
+        }, 550);
+
+    };
+
+};
+
+
+//Event Listener For Services Section
+listServices.addEventListener('click', openServices);
+
+
+
+
+//Function To Open Portfolio Section
+const openPortfolio = () => {
+
+    if (portfolio.style.display !== 'flex' && menu.style.maxWidth === '320px') {
+
+        closeMenuFadeSections();
+
+    setTimeout(function() {
+                    
+        portfolio.style.display = 'flex';
+        portfolio.classList.add('fadeIn');
+
+    }, 1250);
+
+    } else if (portfolio.style.display !== 'flex') {
+
+        closeMenuFadeSections();
+
+        setTimeout(function() {
+                        
+            portfolio.style.display = 'flex';
+            portfolio.classList.add('fadeIn');
+
+        }, 550);
+
+    };
+
+};
+
+
+//Event Listener For Portfolio Section
+listPortfolio.addEventListener('click', openPortfolio);
+
+
+
+
+//Function To Open Music Section
+const openMusic = () => {
+
+    if (music.style.display !== 'flex' && menu.style.maxWidth === '320px') {
+
+        closeMenuFadeSections();
+
+    setTimeout(function() {
+                    
+        music.style.display = 'flex';
+        music.classList.add('fadeIn');
+
+    }, 1250);
+
+    } else if (music.style.display !== 'flex') {
+
+        closeMenuFadeSections();
+
+        setTimeout(function() {
+                        
+            music.style.display = 'flex';
+            music.classList.add('fadeIn');
+
+        }, 550);
+
+    };
+
+};
+
+
+//Event Listener For Music Section
+listMusic.addEventListener('click', openMusic);
+
+
+
+
+
+//Function To Open Contact Section
+const openContact = () => {
+
+    if (contact.style.display !== 'flex' && menu.style.maxWidth === '320px') {
+
+        closeMenuFadeSections();
+
+    setTimeout(function() {
+                    
+        contact.style.display = 'flex';
+        contact.classList.add('fadeIn');
+
+    }, 1250);
+
+    } else if (contact.style.display !== 'flex') {
+
+        closeMenuFadeSections();
+
+        setTimeout(function() {
+                        
+            contact.style.display = 'flex';
+            contact.classList.add('fadeIn');
+
+        }, 550);
+
+    };
+
+};
+
+
+//Event Listener For Contact Section
+listContact.addEventListener('click', openContact);

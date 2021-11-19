@@ -6,7 +6,7 @@ body {
     position: relative;
     display: grid;
     grid-template: 100px 1fr 32px / 1fr 96px;
-    overflow: hidden;
+    overflow: auto;
 
 }
 
@@ -131,8 +131,8 @@ section {
 /* Home Section */
 
 #home {
-/* 
-    display: none; */
+
+    /* display: none; */
 
 }
 
@@ -246,6 +246,42 @@ section {
     margin: 16px 24px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10%;
+
+}
+
+
+/* Services */
+
+#services {
+
+    display: none;
+
+}
+
+
+/* Portfolio */
+
+#portfolio {
+
+    display: none;
+
+}
+
+
+/* Music */
+
+#music {
+
+    display: none;
+
+}
+
+
+/* Contact */
+
+#contact {
+
+    display: none;
 
 }
 
@@ -365,16 +401,6 @@ section {
 
     }
     
-}
-
-@media only screen and (max-height: 725px) {
-
-    body {
-
-        overflow-y: scroll;
-
-    }
-
 }
 
 @media only screen and (max-height: 710px) {

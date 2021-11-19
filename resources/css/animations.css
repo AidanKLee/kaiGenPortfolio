@@ -1,0 +1,274 @@
+@keyframes menuGrow {
+
+    from {
+
+        max-width: 96px;
+
+    }
+
+    to {
+
+        max-width: 320px;
+
+    }
+
+}
+
+.menuGrow {
+
+    animation-name: menuGrow;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes grow {
+
+    from {
+
+        transform: scale(0);
+
+    }
+
+    to {
+
+        transform: scale(1);
+
+    }
+
+}
+
+.grow {
+
+    animation-name: grow;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes menuShrink {
+
+    from {
+
+        max-width: 320px;
+
+    }
+
+    to {
+
+        max-width: 96px;
+
+    }
+
+}
+
+.menuShrink {
+
+    animation-name: menuShrink;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes shrink {
+
+    from {
+
+        transform: scale(1);
+
+    }
+
+    to {
+
+        transform: scale(0);
+
+    }
+
+}
+
+.shrink {
+
+    animation-name: shrink;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes wrapperGrow {
+
+    from {
+
+        width: 17.5%;
+
+    }
+
+    to {
+
+        width: 100%;
+
+    }
+
+}
+
+.wrapperGrow {
+
+    animation-name: wrapperGrow;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+@keyframes blur {
+
+    from {
+
+        filter: blur(0px);
+
+    }
+
+    to {
+
+        filter: blur(5px);
+
+    }
+
+}
+
+.blur {
+
+    animation-name: blur;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes focus {
+
+    from {
+
+        filter: blur(5px);
+
+    }
+
+    to {
+
+        filter: blur(0px);
+
+    }
+
+}
+
+.focus {
+
+    animation-name: focus;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes slideInRight {
+
+    from {
+
+        right: -100%;
+
+    }
+
+    to {
+
+        right: 0;
+
+    }
+
+}
+
+.slideInRight {
+
+    animation-name: slideInRight;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes slideOutRight {
+
+    from {
+
+        right: 0;
+
+    }
+
+    to {
+
+        right: -100%;
+
+    }
+
+}
+
+.slideOutRight {
+
+    animation-name: slideOutRight;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fadeOut {
+
+    from {
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        opacity: 0;
+
+    }
+
+}
+
+.fadeOut {
+
+    animation-name: fadeOut;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+.fadeIn {
+
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}

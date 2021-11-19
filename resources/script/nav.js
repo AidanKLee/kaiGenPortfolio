@@ -129,10 +129,10 @@ opnMenu.addEventListener('keydown', function(e) {
 
 const menuClose = () => {
 
-    menu.classList.remove('menuGrow');
-
-    menu.classList.add('menuShrink');
-    menuBtn.classList.add('wrapperGrow');
+    
+    
+    navResume.classList.remove('slideInRight');
+    navResume.classList.add('slideOutRight');
 
     navText.forEach(element => {
 
@@ -142,7 +142,18 @@ const menuClose = () => {
 
     });
 
+    setTimeout(function() {
+
+        navText.forEach(element => {
+
+            element.style.display = '';
     
+        });
+
+        menu.classList.remove('menuGrow');
+
+        menu.classList.add('menuShrink');
+        menuBtn.classList.add('wrapperGrow');
 
     content.forEach(element => {
 
@@ -151,19 +162,8 @@ const menuClose = () => {
 
     });
 
-    opnMenu.style.display = '';
-    clsMenu.style.display = '';
-    
-    navResume.classList.remove('slideInRight');
-    navResume.classList.add('slideOutRight');
-
-    setTimeout(function() {
-
-        navText.forEach(element => {
-
-            element.style.display = '';
-    
-        });
+        opnMenu.style.display = '';
+        clsMenu.style.display = '';
 
         navResume.style.display = '';
         

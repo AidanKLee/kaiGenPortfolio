@@ -142,9 +142,9 @@
 
                 <div id="navResume">
 
-                    <a href="">
+                    <a href="" tabindex="0">
 
-                        <img src="resources/images/icons/downloadFile.svg" alt="Download CV">
+                        <img src="resources/images/icons/downloadFile.svg" alt="">
                         <p id="cvText" class="navText" aria-hidden="true">
                             Download CV
                         </p>
@@ -183,7 +183,7 @@
 
                     </a>
 
-                    <a href="" id="resume" class="button italic bold smallpSize blue" tabindex="0" aria-label="Resumay">
+                    <a href="" id="resume" class="button italic bold smallpSize orange" tabindex="0" aria-label="Resumay">
 
                         DOWNLOAD CV
 
@@ -241,20 +241,30 @@
 
                 <figure id="aboutContent" tabindex="0">
 
-                    <img id="myPic" src="resources/images/mypic.jpg" alt="Aidan Lee">
+                    <div id="aboutContentPic">
 
-                    <figcaption>
+                        <img id="myPic" src="resources/images/mypic.jpg" alt="Aidan Lee">
+                        <img id="cert" src="resources/images/icons/programming/progmicrosoft.png" alt="Microsoft Certification">
 
-                        <h2 class="h1Size light" aria-label="about kaygen">
+                    </div>
+
+                    <figcaption id="aboutContentText">
+
+                        <h2 class="h2Size light" aria-label="about kaygen">
                             About
                         </h2>
                         <p>
                             My name's Aidan. I've recently finished a full stack development course studying several programming languages including JavaScript, HTML, CSS, PHP, Python, C# among others.
                         </p>
                         <br>
-                        <p>
-                            As a full stack developer, I can design and build front end and back end solutions to any problem. I look for emerging technologies to provide cutting edge solutions, pushing to innovate on client projects. My focus is designing elegant, responsive front-end interfaces that deliver an exceptional experience for the user. At the same time, I am adept at developing custom server-side data management solutions with dynamic algorithms.
-                        </p>
+                        <span class="hideText">
+
+                            <p>
+                                As a full stack developer, I can design and build front end and back end solutions to any problem. I look for emerging technologies to provide cutting edge solutions, pushing to innovate on client projects. My focus is designing elegant, responsive front-end interfaces that deliver an exceptional experience for the user. At the same time, I am adept at developing custom server-side data management solutions with dynamic algorithms.
+                            </p>
+
+                        </span>
+                        
 
                     </figcaption>
 
@@ -272,6 +282,15 @@
                         <img src="resources/images/icons/programming/progjs.png" alt="JavaScript">
                     </li>
                     <li>
+                        <img src="resources/images/icons/programming/progreact.png" alt="React">
+                    </li>
+                    <li>
+                        <img src="resources/images/icons/programming/progredux.png" alt="Redux">
+                    </li>
+                    <li>
+                        <img src="resources/images/icons/programming/prognodejs.png" alt="Node JS">
+                    </li>
+                    <li>
                         <img src="resources/images/icons/programming/progpython.png" alt="Python">
                     </li>
                     <li>
@@ -284,10 +303,102 @@
                         <img src="resources/images/icons/programming/progjava.png" alt="Java">
                     </li>
                     <li>
-                        <img src="resources/images/icons/programming/progmicrosoft.png" alt="Microsoft Certification">
+                        <img src="resources/images/icons/programming/progsql.png" alt="SQL">
+                    </li>
+                    <li>
+                        <img src="resources/images/icons/programming/proggithub.png" alt="GitHub">
                     </li>
 
                 </ul>
+
+                <div id="aboutSkills">
+
+                    <div class="circleContainer">
+
+                        <div class="circlePercent">
+
+                            <svg>
+                                <circle class="circleBar" cx="70" cy="70" r="70"></circle>
+                                <circle id="aboutDesign" class="circleProg" cx="70" cy="70" r="70"></circle>
+                            </svg>
+
+                            <div class="circleNumber">
+
+                                <p class="h3Size light">80<span class="h6Size">%</span></p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="h6Size normal">Web Design</h3>
+
+                    </div>
+
+                    <div class="circleContainer">
+
+                        <div class="circlePercent">
+
+                            <svg>
+                                <circle class="circleBar" cx="70" cy="70" r="70"></circle>
+                                <circle id="aboutFront" class="circleProg" cx="70" cy="70" r="70"></circle>
+                            </svg>
+
+                            <div class="circleNumber">
+
+                                <p class="h3Size light">65<span class="h6Size">%</span></p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="h6Size normal">Front End</h3>
+
+                    </div>
+
+                    <div class="circleContainer">
+
+                        <div class="circlePercent">
+
+                            <svg>
+                                <circle class="circleBar" cx="70" cy="70" r="70"></circle>
+                                <circle id="aboutBack" class="circleProg" cx="70" cy="70" r="70"></circle>
+                            </svg>
+
+                            <div class="circleNumber">
+
+                                <p class="h3Size light">55<span class="h6Size">%</span></p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="h6Size normal">Back End</h3>
+
+                    </div>
+
+                </div>
+
+                <div id="aboutButtons">
+
+                    <div id="aboutTextBtn" class="button italic bold smallpSize green" tabindex="0">
+
+                        READ MORE
+
+                    </div>
+
+                    <div id="aboutSkillsBtn" class="button italic bold smallpSize" tabindex="0">
+
+                        SKILLS
+
+                    </div>
+
+                    <div id="aboutLangBtn" class="button italic bold smallpSize orange" tabindex="0">
+
+                        LANGUAGES
+
+                    </div>                    
+
+                </div>
 
             </section>
 

@@ -260,8 +260,6 @@ const fadeOutSections = () => {
 
     contentSections.forEach(section => {
 
-        console.log(section.classList)
-
         section.classList.add('fadeOut');
 
         setTimeout(function() {

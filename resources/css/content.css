@@ -30,6 +30,7 @@ main {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
     z-index: 20;
+    position: relative;
 
 }
 
@@ -130,11 +131,11 @@ section {
 /* Main */
 /* Home Section */
 
-#home {
+/* #home {
 
-    /* display: none; */
+    display: none;
 
-}
+} */
 
 #homeWelcome {
 
@@ -208,13 +209,31 @@ section {
 
 }
 
+#aboutContentPic {
+
+    position: relative;
+
+}
+
 #myPic {
 
-    width: 50%;
-    max-width: 300px;
-    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 160px;
     border-radius: 50%;
     border: 2px solid rgba(31, 31, 31, .8);
+
+}
+
+#cert {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 96px;
+    transform: translate(25%, 0);
 
 }
 
@@ -246,6 +265,47 @@ section {
     margin: 16px 24px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10%;
+
+}
+
+#aboutSkills {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#aboutDesign {
+
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+
+}
+
+#aboutFront {
+
+    stroke-dashoffset: calc(440 - (440 * 65) / 100);
+
+}
+
+#aboutBack {
+
+    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+
+}
+
+#aboutButtons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#aboutSkillsBtn, #aboutLangBtn, #aboutTextBtn {
+
+    display: none;
 
 }
 
@@ -285,18 +345,43 @@ section {
 
 }
 
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1650px) {
 
     #aboutLang img {
 
-        width: 56px;
+        margin: 8px 8px;  
 
     }
 
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1360px) {
+
+    #aboutLang img {
+
+        width: 56px;   
+
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    #aboutLang img {
+
+        width: 48px !important;   
+
+    }
+
+    #about .button {
+
+        margin-top: 0px;
+
+    }
+
+}
+
+@media only screen and (max-width: 880px) {
 
     html {
 
@@ -304,41 +389,38 @@ section {
 
     }
 
-    #myPic {
-
-        margin: 16px 0;
-
-    }
-
 }
 
+@media only screen and (max-width: 680px) {  
 
-
-@media only screen and (max-width: 700px) {
-
-
-    #myPic {
+    #aboutContentPic {
 
         display: none;
+    
+    }
+
+    #aboutContentText {
+
+        padding-left: 0px !important;
 
     }
 
-    #aboutContent figcaption {
+    #aboutSkills {
 
-        padding-left: 0;
-
+        display: none;
+    
+    }
+    
+    #aboutSkillsBtn {
+    
+        display: flex;
+    
     }
 
 }
 
-@media only screen and (max-width: 650px) {
 
-
-    #aboutContent {
-
-        flex-wrap: wrap;
-
-    }    
+@media only screen and (max-width: 650px) {  
 
     .larger {
 
@@ -348,7 +430,7 @@ section {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
 
     html {
 
@@ -362,21 +444,9 @@ section {
     
     }
 
-    #aboutContent {
-
-        padding: 0 16px;
-
-    }
-
-    #aboutLang img {
-
-        margin: 8px 8px;
-
-    }
-
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
 
     .larger {
 
@@ -386,7 +456,7 @@ section {
 
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 440px) {
 
     #header {
 
@@ -403,18 +473,123 @@ section {
     
 }
 
-@media only screen and (max-height: 710px) {
+@media only screen and (max-width: 420px) {
 
+    .hideText {
+
+        display: none;
+
+    }
+    popUpMenu
+    #about br {
+
+        display: none;
+
+    }
+
+    #aboutButtons {
+
+        flex-direction: column;
+
+    }
+
+    #aboutTextBtn {
+
+        display: flex;
+
+    }
+
+    #about .button {
+
+        margin-bottom: 16px;
+
+    }
+    
+}
+
+@media only screen and (max-width: 360px) {
+
+    #aboutLang {
+
+        display: none;
+
+    }
+
+    #aboutLangBtn {
+
+        display: flex;
+
+    }
+    
+}
+
+@media only screen and (max-width: 300px) {
+
+    .larger {
+
+        font-size: 3.4rem;
+    
+    }
+    
+}
+
+
+
+@media only screen and (max-height: 740px) {
 
     #aboutLang img {
 
-        width: 48px;
+        width: 56px;   
+
+    }
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
 
     }
 
 }
 
-@media only screen and (max-height: 375px) {
+@media only screen and (max-height: 580px) {
+
+    #aboutLang {
+
+        display: none;
+
+    }
+
+    #aboutLangBtn {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-height: 500px) {
+
+    #aboutContentPic {
+
+        display: none;
+
+    }
+
+    #aboutContentText {
+
+        padding-left: 0;
+
+    }
+
+}
+
+@media only screen and (max-height: 400px) {
 
     #homeSocials {
 
@@ -428,15 +603,34 @@ section {
 
     }
 
-}
+    .hideText {
 
-@media only screen and (max-height: 375px) and (max-width: 375px) {
-
-    .larger {
-
-        font-size: 5.5rem;
+        display: none;
 
     }
+
+    #aboutButtons .button {
+
+        margin-top: 0;
+
+    }
+
+    #aboutTextBtn {
+
+        display: flex;
+        
+    }
+
+    #about br {
+
+        display: none;
+
+    }
+
+}
+
+@media only screen and (max-height: 400px) and (max-width: 400px) {
+
 
     .larger {
 

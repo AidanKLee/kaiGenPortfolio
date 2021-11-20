@@ -211,18 +211,23 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 182px;
-    padding: 16px;
+    align-content: center;
+    min-width: 182px;
+    width: 182px;
+    margin: 16px;
     text-align: center;
 
 }
 
 .circlePercent {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     position: relative;
     width: fit-content;
-    height: 150px;
-    width: 150px;
+    height: fit-content;
     transform: rotate(-90deg);
 
 }
@@ -237,8 +242,6 @@ h6 {
 
 .circlePercent svg circle {
 
-    height: 150px;
-    width: 150px;
     fill: none;
     stroke: #f1f1f1;
     transform: translate(6px, 6px);
@@ -262,7 +265,10 @@ h6 {
 
 .circleContainer h3 {
 
+    display: flex;
+    align-items: center;
     padding: 16px 0;
+    height: 74px;
 
 }
 

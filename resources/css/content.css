@@ -270,10 +270,12 @@ section {
 
 #aboutSkills {
 
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    align-content: space-between;
 
 }
 
@@ -295,11 +297,24 @@ section {
 
 }
 
+#aboutComp {
+
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+
+}
+
+#aboutPostProd {
+
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+
+}
+
 #aboutButtons {
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -345,41 +360,9 @@ section {
 
 }
 
-@media only screen and (max-width: 1650px) {
 
-    #aboutLang img {
 
-        margin: 8px 8px;  
 
-    }
-
-}
-
-@media only screen and (max-width: 1360px) {
-
-    #aboutLang img {
-
-        width: 56px;   
-
-    }
-
-}
-
-@media only screen and (max-width: 960px) {
-
-    #aboutLang img {
-
-        width: 48px !important;   
-
-    }
-
-    #about .button {
-
-        margin-top: 0px;
-
-    }
-
-}
 
 @media only screen and (max-width: 880px) {
 
@@ -390,35 +373,6 @@ section {
     }
 
 }
-
-@media only screen and (max-width: 680px) {  
-
-    #aboutContentPic {
-
-        display: none;
-    
-    }
-
-    #aboutContentText {
-
-        padding-left: 0px !important;
-
-    }
-
-    #aboutSkills {
-
-        display: none;
-    
-    }
-    
-    #aboutSkillsBtn {
-    
-        display: flex;
-    
-    }
-
-}
-
 
 @media only screen and (max-width: 650px) {  
 
@@ -473,56 +427,6 @@ section {
     
 }
 
-@media only screen and (max-width: 420px) {
-
-    .hideText {
-
-        display: none;
-
-    }
-    popUpMenu
-    #about br {
-
-        display: none;
-
-    }
-
-    #aboutButtons {
-
-        flex-direction: column;
-
-    }
-
-    #aboutTextBtn {
-
-        display: flex;
-
-    }
-
-    #about .button {
-
-        margin-bottom: 16px;
-
-    }
-    
-}
-
-@media only screen and (max-width: 360px) {
-
-    #aboutLang {
-
-        display: none;
-
-    }
-
-    #aboutLangBtn {
-
-        display: flex;
-
-    }
-    
-}
-
 @media only screen and (max-width: 300px) {
 
     .larger {
@@ -531,62 +435,6 @@ section {
     
     }
     
-}
-
-
-
-@media only screen and (max-height: 740px) {
-
-    #aboutLang img {
-
-        width: 56px;   
-
-    }
-
-    #aboutSkills {
-
-        display: none;
-
-    }
-
-    #aboutSkillsBtn {
-
-        display: flex;
-
-    }
-
-}
-
-@media only screen and (max-height: 580px) {
-
-    #aboutLang {
-
-        display: none;
-
-    }
-
-    #aboutLangBtn {
-
-        display: flex;
-
-    }
-
-}
-
-@media only screen and (max-height: 500px) {
-
-    #aboutContentPic {
-
-        display: none;
-
-    }
-
-    #aboutContentText {
-
-        padding-left: 0;
-
-    }
-
 }
 
 @media only screen and (max-height: 400px) {
@@ -602,6 +450,260 @@ section {
         font-size: 5.5rem;
 
     }
+
+}
+
+@media only screen and (max-height: 400px) and (max-width: 400px) {
+
+
+    .larger {
+
+        font-size: 3.85rem;
+
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1650px) {
+
+    #aboutLang img {
+
+        margin: 8px 8px;  
+
+    }
+
+}
+
+@media only screen and (max-height: 780px) {
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-width: 1260px) {
+
+    #aboutLang img {
+
+        width: 56px;   
+
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    #aboutLang img {
+
+        width: 48px !important;   
+
+    }
+
+    #about .button {
+
+        margin-top: 0px;
+
+    }
+
+}
+
+@media only screen and (max-height: 960px) and (max-width: 1005px) {
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-height: 970px) and (max-width: 980px) {
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-height: 1010px) and (max-width: 885px) {
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-height: 1040px) and (max-width: 760px) {
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-height: 1070px) and (max-width: 730px) {
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-height: 1100px) and (max-width: 650px) {
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-width: 645px) {
+
+    #aboutSkills {
+
+        display: none;
+
+    }
+
+    #aboutSkillsBtn {
+
+        display: flex;
+
+    }
+
+    #aboutContent {
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media only screen and (max-width: 750px) and (max-height: 750px) {  
+
+    #aboutContent {
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media only screen and (max-width: 645px) and (max-height: 825px) {  
+
+    #aboutContentPic {
+
+        display: none;
+    
+    }
+
+    #aboutContentText {
+
+        padding-left: 0px !important;
+
+    }
+
+}
+
+@media only screen and (max-width: 825px) and (max-height: 550px) {  
+
+    #aboutContentPic {
+
+        display: none;
+    
+    }
+
+    #aboutContentText {
+
+        padding-left: 0px !important;
+
+    }
+
+}
+
+@media only screen and (max-height: 670px) {  
+
+    #aboutLang {
+
+        display: none;
+    
+    }
+
+    #aboutLangBtn {
+
+        display: flex;
+
+    }
+
+    #about .button {
+
+        margin-bottom: 16px;
+
+    }
+
+}
+
+@media only screen and (max-width: 850px) and (max-height: 400px) {  
 
     .hideText {
 
@@ -621,21 +723,27 @@ section {
         
     }
 
-    #about br {
+}
+
+@media only screen and (max-width: 320px) {  
+
+    .hideText {
 
         display: none;
 
     }
 
-}
+    #aboutButtons .button {
 
-@media only screen and (max-height: 400px) and (max-width: 400px) {
-
-
-    .larger {
-
-        font-size: 3.85rem;
+        margin-top: 0;
 
     }
 
+    #aboutTextBtn {
+
+        display: flex;
+        
+    }
+
 }
+

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="stylesheet" href="resources/css/nav.css">
         <link rel="stylesheet" href="resources/css/content.css">
+        <link rel="stylesheet" href="resources/css/popUp.css">
         <link rel="stylesheet" href="resources/css/animations.css">
         <link rel="icon" type="image/x-icon" href="resources/images/icons/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,400;1,500;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -376,6 +377,48 @@
 
                     </div>
 
+                    <div class="circleContainer">
+
+                        <div class="circlePercent">
+
+                            <svg>
+                                <circle class="circleBar" cx="70" cy="70" r="70"></circle>
+                                <circle id="aboutComp" class="circleProg" cx="70" cy="70" r="70"></circle>
+                            </svg>
+
+                            <div class="circleNumber">
+
+                                <p class="h3Size light">70<span class="h6Size">%</span></p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="h6Size normal">Compostition</h3>
+
+                    </div>
+
+                    <div class="circleContainer">
+
+                        <div class="circlePercent">
+
+                            <svg>
+                                <circle class="circleBar" cx="70" cy="70" r="70"></circle>
+                                <circle id="aboutPostProd" class="circleProg" cx="70" cy="70" r="70"></circle>
+                            </svg>
+
+                            <div class="circleNumber">
+
+                                <p class="h3Size light">90<span class="h6Size">%</span></p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="h6Size normal">Audio Post Production</h3>
+
+                    </div>
+
                 </div>
 
                 <div id="aboutButtons">
@@ -386,15 +429,15 @@
 
                     </div>
 
-                    <div id="aboutSkillsBtn" class="button italic bold smallpSize" tabindex="0">
+                    <div id="aboutLangBtn" class="button italic bold smallpSize" tabindex="0">
 
-                        SKILLS
+                        LANGUAGES
 
                     </div>
 
-                    <div id="aboutLangBtn" class="button italic bold smallpSize orange" tabindex="0">
+                    <div id="aboutSkillsBtn" class="button italic bold smallpSize orange" tabindex="0">
 
-                        LANGUAGES
+                        SKILLS
 
                     </div>                    
 
@@ -435,6 +478,31 @@
             </section>
 
         </main>
+
+        <div id="popUp">
+
+            <div id="popUpClose">
+
+                <img id="popUpCloseImg" src="resources/images/icons/close.svg" alt="Close Pop-Up" tabindex="0">
+
+            </div>
+
+            <div id="popUpAboutText" class="popUpContent">
+
+                <h2 class="h2Size light" aria-label="about kaygen">
+                    About
+                </h2>
+                <p>
+                    My name's Aidan. I've recently finished a full stack development course studying several programming languages including JavaScript, HTML, CSS, PHP, Python, C# among others.
+                </p>
+                <br>
+                <p>
+                    As a full stack developer, I can design and build front end and back end solutions to any problem. I look for emerging technologies to provide cutting edge solutions, pushing to innovate on client projects. My focus is designing elegant, responsive front-end interfaces that deliver an exceptional experience for the user. At the same time, I am adept at developing custom server-side data management solutions with dynamic algorithms.
+                </p>                
+
+            </div>
+
+        </div>
 
         <footer id="#footer">
 

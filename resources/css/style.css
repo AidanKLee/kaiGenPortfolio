@@ -211,7 +211,9 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 182px;
     padding: 16px;
+    text-align: center;
 
 }
 
@@ -219,8 +221,8 @@ h6 {
 
     position: relative;
     width: fit-content;
-    height: 152px;
-    width: 152px;
+    height: 150px;
+    width: 150px;
     transform: rotate(-90deg);
 
 }
@@ -228,15 +230,15 @@ h6 {
 .circlePercent svg {
 
     position: relative;
-    height: 152px;
-    width: 152px;
+    height: 150px;
+    width: 150px;
 
 }
 
 .circlePercent svg circle {
 
-    height: 152px;
-    width: 152px;
+    height: 150px;
+    width: 150px;
     fill: none;
     stroke: #f1f1f1;
     transform: translate(6px, 6px);
@@ -272,29 +274,6 @@ h6 {
 
 .circleProg {
 
-    stroke-width: 12;
+    stroke-width: 8;
 
 }
-
-.popUpMenu {
-
-    position: absolute !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: fit-content;
-    max-width: 100%;
-    background-color: rgba(31, 31, 31, .9) !important;
-    z-index: 120 !important;
-    border-radius: 16px;
-    margin: 0;
-    /* transform: scale(50%); */
-
-}
-
-/* .scaleDown {
-
-
-
-} */

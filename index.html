@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="stylesheet" href="resources/css/nav.css">
         <link rel="stylesheet" href="resources/css/content.css">
-        <link rel="stylesheet" href="resources/css/popUp.css">
         <link rel="stylesheet" href="resources/css/animations.css">
         <link rel="icon" type="image/x-icon" href="resources/images/icons/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,400;1,500;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -22,13 +21,38 @@
 
     <body>
 
+        <div id="loadingPage">
+
+                <img id="loadingLogo" src="resources/images/icons/logo.png" alt="">
+                <svg id="circle1" class="circle" viewbox="0 0 308 308" width="308px" height="308px">
+                    <circle cx="150" cy="150" r="150"></circle>
+                </svg>
+                <svg id="circle2" class="circle" viewbox="0 0 308 308" width="308px" height="308px">
+                    <circle cx="150" cy="150" r="150"></circle>
+                </svg>
+                <svg id="circle3" class="circle" viewbox="0 0 308 308" width="308px" height="308px">
+                    <circle cx="150" cy="150" r="150"></circle>
+                </svg>
+                <svg id="circle4" class="circle" viewbox="0 0 308 308" width="308px" height="308px">
+                    <circle cx="150" cy="150" r="150"></circle>
+                </svg>
+                <svg id="circle5" class="circle" viewbox="0 0 308 308" width="308px" height="308px">
+                    <circle cx="150" cy="150" r="150"></circle>
+                </svg>
+
+        </div>
+
         <div id="background">
 
             
             <div id="bg"><div id="overlay"></div></div>
             
 
-            
+        </div>
+
+        <div id="scrollBar">
+
+            <div id="scrollBarInner"></div>
 
         </div>
 
@@ -455,9 +479,44 @@
 
             <section id="portfolio">
 
-                <h2>
+                <h2 class="light">
                     Portfolio
                 </h2>
+
+                <div id="portfolioContent">
+
+                    <figure id="portfolioAsos">
+
+                        <a href="https://aidanklee.github.io/myAsosHomepage/" target="_blank">
+                            <img class="portfolioPics" src="resources/images/asos.png" alt="ASOS Landing Page Copy">
+
+                            <figcaption>
+
+                                    Store Landing Page - ASOS
+                                
+
+                            </figcaption>
+                        </a>
+
+                    </figure>
+
+                    <figure id="portfolioPhoenix">
+
+                        <a href="https://aidanklee.github.io/phoenixMma/" target="_blank">
+                            <img class="portfolioPics" src="resources/images/phoenix.png" alt="Landing Page for MMA club">
+
+                            <figcaption>
+
+                                    Club Landing Page - Phoenix MMA
+                                
+                            </figcaption>
+                        </a>
+
+                    </figure>
+
+                </div>
+
+                <p class="smallPrint">Mockups by <a class="smallPrint" href="https://www.anthonyboyd.graphics/mockups/" target="_blank">Anthony Boyd Graphics</a>.</p>
 
             </section>
 
@@ -471,188 +530,48 @@
 
             <section id="contact">
 
-                <h2>
+                <h2 class="light">
                     Contact
                 </h2>
+
+                <form id="contactForm" method="get" action="/contact.html">
+
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <br>
+                        <input type="text" name="fname" id="fname" placeholder="Enter Your First Name..." required>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <br>
+                        <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name..." required>
+                    </div>
+                    <div>
+                        <label for="email">E-Mail:</label>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="Enter Your E-Mail..." required>
+                    </div>
+                    <div>
+                        <label for="company">Company:</label>
+                        <br>
+                        <input type="text" name="company" id="company" placeholder="Enter Your Company..." required>
+                    </div>
+
+                    <div id="contactFormMessage">
+
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" placeholder="Enter Your Message..." style="resize: none;" required></textarea>
+
+                    </div>
+                    
+                    <input type="submit" id="contactFormSubmit" class="button orange">
+                    
+                </form>
 
             </section>
 
         </main>
-
-        <div id="popUp">
-
-            <div id="popUpClose">
-
-                <img id="popUpCloseImg" src="resources/images/icons/close.svg" alt="Close Pop-Up" tabindex="0">
-
-            </div>
-
-            <div id="popUpAboutText" class="popUpContent">
-
-                <h2 class="h2Size light" aria-label="about kaygen">
-                    About
-                </h2>
-                <p>
-                    My name's Aidan. I've recently finished a full stack development course studying several programming languages including JavaScript, HTML, CSS, PHP, Python, C# among others.
-                </p>
-                <br>
-                <p>
-                    As a full stack developer, I can design and build front end and back end solutions to any problem. I look for emerging technologies to provide cutting edge solutions, pushing to innovate on client projects. My focus is designing elegant, responsive front-end interfaces that deliver an exceptional experience for the user. At the same time, I am adept at developing custom server-side data management solutions with dynamic algorithms.
-                </p>                
-
-            </div>
-
-            <ul id="popUpAboutLang" class="popUpContent">
-
-                <li>
-                    <img src="resources/images/icons/programming/proghtml5.png" alt="HTML 5.0">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progcss.png" alt="CSS3">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progjs.png" alt="JavaScript">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progreact.png" alt="React">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progredux.png" alt="Redux">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/prognodejs.png" alt="Node JS">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progpython.png" alt="Python">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progcsharp.png" alt="C#" aria-label="C Sharp">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progphp.png" alt="PHP">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progjava.png" alt="Java">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/progsql.png" alt="SQL">
-                </li>
-                <li>
-                    <img src="resources/images/icons/programming/proggithub.png" alt="GitHub">
-                </li>
-
-            </ul>
-
-            <div id="popUpAboutSkills" class="popUpContent">
-
-                <div class="circleContainer">
-
-                    <div class="circlePercent">
-
-                        <svg viewBox="0 0 150 150" height="150px" width="150px">
-                            <circle class="circleBar" cx="70" cy="70" r="70"></circle>
-                            <circle id="aboutDesign" class="circleProg" cx="70" cy="70" r="70"</circle>
-                        </svg>
-
-                        <div class="circleNumber">
-
-                            <p class="h3Size light">80<span class="h6Size">%</span></p>
-
-                        </div>
-
-                    </div>
-
-                    <h3 class="h6Size normal">Web Design</h3>
-
-                </div>
-
-                <div class="circleContainer">
-
-                    <div class="circlePercent">
-
-                        <svg viewBox="0 0 150 150" height="150px" width="150px">
-                            <circle class="circleBar" cx="70" cy="70" r="70"></circle>
-                            <circle id="aboutFront" class="circleProg" cx="70" cy="70" r="70"></circle>
-                        </svg>
-
-                        <div class="circleNumber">
-
-                            <p class="h3Size light">65<span class="h6Size">%</span></p>
-
-                        </div>
-
-                    </div>
-
-                    <h3 class="h6Size normal">Front End</h3>
-
-                </div>
-
-                <div class="circleContainer">
-
-                    <div class="circlePercent">
-
-                        <svg viewBox="0 0 150 150" height="150px" width="150px">
-                            <circle class="circleBar" cx="70" cy="70" r="70"></circle>
-                            <circle id="aboutBack" class="circleProg" cx="70" cy="70" r="70"></circle>
-                        </svg>
-
-                        <div class="circleNumber">
-
-                            <p class="h3Size light">55<span class="h6Size">%</span></p>
-
-                        </div>
-
-                    </div>
-
-                    <h3 class="h6Size normal">Back End</h3>
-
-                </div>
-
-                <div class="circleContainer">
-
-                    <div class="circlePercent">
-
-                        <svg viewBox="0 0 150 150" height="150px" width="150px">
-                            <circle class="circleBar" cx="70" cy="70" r="70"></circle>
-                            <circle id="aboutComp" class="circleProg" cx="70" cy="70" r="70"></circle>
-                        </svg>
-
-                        <div class="circleNumber">
-
-                            <p class="h3Size light">70<span class="h6Size">%</span></p>
-
-                        </div>
-
-                    </div>
-
-                    <h3 class="h6Size normal">Compostition</h3>
-
-                </div>
-
-                <div class="circleContainer">
-
-                    <div class="circlePercent">
-
-                        <svg viewBox="0 0 150 150" height="150px" width="150px">
-                            <circle class="circleBar" cx="70" cy="70" r="70"></circle>
-                            <circle id="aboutPostProd" class="circleProg" cx="70" cy="70" r="70"></circle>
-                        </svg>
-
-                        <div class="circleNumber">
-
-                            <p class="h3Size light">90<span class="h6Size">%</span></p>
-
-                        </div>
-
-                    </div>
-
-                    <h3 class="h6Size normal">Audio Post Production</h3>
-
-                </div>
-
-            </div>
-
-        </div>
 
         <footer id="#footer">
 
@@ -661,7 +580,7 @@
         </footer>
 
         <script src="resources/script/nav.js"></script>
-        <script src="resources/script/readMore.js"></script>
+        <script src="resources/script/content.js"></script>
 
     </body>
 </html>

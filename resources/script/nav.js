@@ -513,3 +513,34 @@ const openContact = () => {
 
 //Event Listener For Contact Section
 listContact.addEventListener('click', openContact);
+
+
+
+
+//Scrollbar
+
+const body = document.body;
+const scrollBar = document.getElementById('scrollBarInner');
+
+
+window.addEventListener('scroll', function() {
+
+    
+    const scrollPercent = window.pageYOffset * (100 / (body.scrollHeight - window.innerHeight));
+    scrollBar.style.height = scrollPercent + '%';
+
+});
+
+window.addEventListener('resize', function() {
+
+
+    if (window.pageYOffset === 0) {
+
+        scrollBar.style.height = '0%';
+
+    }
+
+    const scrollPercent = window.pageYOffset * (100 / (body.scrollHeight - window.innerHeight));
+    scrollBar.style.height = scrollPercent + '%';
+
+});

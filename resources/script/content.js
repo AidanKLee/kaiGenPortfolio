@@ -1,6 +1,6 @@
 const loader = document.getElementById("loadingPage");
 
-// document.onload(function() {
+window.addEventListener('load', (event) => {
 
     setTimeout(function() {
 
@@ -13,7 +13,6 @@ const loader = document.getElementById("loadingPage");
         },1000)
         
     
-    }, 3000)
+    }, 2000)
 
-// });
-
+});

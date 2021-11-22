@@ -13,6 +13,6 @@ window.addEventListener('load', (event) => {
         },1000)
         
     
-    }, 2000)
+    }, 1000)
 
 });

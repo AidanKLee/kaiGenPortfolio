@@ -61,7 +61,7 @@ footer {
 
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
-    z-index: 21;
+    z-index: 19;
 
     display: flex;
     justify-content: center;
@@ -501,13 +501,13 @@ section {
 
 #aboutFront {
 
-    stroke-dashoffset: calc(440 - (440 * 65) / 100);
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
 
 }
 
 #aboutBack {
 
-    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+    stroke-dashoffset: calc(440 - (440 * 65) / 100);
 
 }
 
@@ -544,6 +544,139 @@ section {
 #services {
 
     display: none;
+    padding: 32px 0px 64px;
+
+}
+
+#servicesContent {
+
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.servicesContentCard {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    height: 150px;
+    width: 150px;
+    margin: 8px;
+    border: 1px solid #3f3f3f;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.servicesContentCard:hover {
+
+    background-color: #3f3f3f;
+
+}
+
+.servicesContentCard img {
+
+    width: auto;
+    height: 36px;
+    margin: 8px;
+    filter: invert(100%) sepia(67%) saturate(27%) hue-rotate(273deg) brightness(113%) contrast(89%);
+
+}
+
+.servicesContentCard h3 {
+
+    padding: 8px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+
+}
+
+.servicesContentInfo {
+
+    display: none;
+    max-width: 664px;
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(31, 31, 31, .8);
+    border: 1px solid #3f3f3f;
+    z-index: 100;
+    font-size: .8rem;
+    position: absolute;
+    top: 164px;
+
+}
+
+#frontEnd:hover +#frontEndInfo {
+
+    display: block;
+
+}
+
+#backEnd:hover +#backEndInfo {
+
+    display: block;
+
+}
+
+@media only screen and (max-width: 427px) {
+
+    #backEndInfo {
+
+        top: 332px;
+
+    }
+
+    #compositionInfo {
+
+        top: 498px !important;
+
+    }
+
+    #audioPPInfo {
+
+        top: 664px !important;
+
+    }
+
+}
+
+#composition:hover +#compositionInfo {
+
+    display: block;
+
+}
+
+@media only screen and (max-width: 593px) {
+
+    #compositionInfo {
+
+        top: 332px;
+
+    }
+
+}
+
+#audioPP:hover +#audioPPInfo {
+
+    display: block;
+
+}
+
+@media only screen and (max-width: 759px) {
+
+    #audioPPInfo {
+
+        top: 332px;
+
+    }
 
 }
 
@@ -584,6 +717,25 @@ section {
 #music {
 
     display: none;
+
+}
+
+#musicContent {
+
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#music iframe {
+
+    max-width: 512px;
+    margin: 16px 0;
+    padding: 0 16px;
 
 }
 

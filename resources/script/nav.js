@@ -331,6 +331,17 @@ const openHome = () => {
 //Event Listeners For Home Section
 listHome.addEventListener('click', openHome);
 
+listHome.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        openHome();
+
+    };
+
+});
+
+
 
 
 
@@ -367,7 +378,27 @@ const openAbout = () => {
 
 //Event Listeners For About Section
 listAbout.addEventListener('click', openAbout);
+listAbout.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        openAbout();
+
+    };
+
+});
+
 aboutButton.addEventListener('click', openAbout);
+aboutButton.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        openAbout();
+
+    };
+
+});
+
 
 
 
@@ -404,6 +435,16 @@ const openServices = () => {
 
 //Event Listener For Services Section
 listServices.addEventListener('click', openServices);
+listServices.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        openServices();
+
+    };
+
+});
+
 
 
 
@@ -440,6 +481,16 @@ const openPortfolio = () => {
 
 //Event Listener For Portfolio Section
 listPortfolio.addEventListener('click', openPortfolio);
+listPortfolio.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        openPortfolio();
+
+    };
+
+});
+
 
 
 
@@ -476,6 +527,16 @@ const openMusic = () => {
 
 //Event Listener For Music Section
 listMusic.addEventListener('click', openMusic);
+listMusic.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        openMusic();
+
+    };
+
+});
+
 
 
 
@@ -513,6 +574,16 @@ const openContact = () => {
 
 //Event Listener For Contact Section
 listContact.addEventListener('click', openContact);
+listContact.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Enter') {
+
+        openContact();
+
+    };
+
+});
+
 
 
 
